@@ -1,0 +1,136 @@
+
+.cardGame{
+width: 120px;
+height: 160px;
+margin-top: -140px;
+box-shadow: 0% 0% 5%;
+}
+.openCard{
+  width: 100px;
+  height: 150px;
+  margin-left: 90%;
+  margin-top: -25px;
+z-index: 300;
+}
+#logo{
+background-color: blue;
+  position: sticky;
+  top: 30px;
+  width: 200px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 43%;
+ 
+}
+.nullCard{
+  width: 120px;
+  height: 0.5px;
+  margin-left: 30px;
+  margin-top: 30px;
+  background: none;
+  border: none;
+}
+
+#gameDiv{
+  z-index: 1;
+  display: grid;
+  grid-template-areas:"logo" "cardDiv" "openCard" "moreDiv";
+  grid-template-columns: 100%;
+  grid-template-rows: 220px 250px 160px 75px;
+  
+
+}
+#cardDiv{
+  z-index: 200;
+  display: grid;
+  grid-template-areas:"div0" "div1" "div2" "div3" "div4" "div5" "div6" "div7" "div8" "div9";
+  grid-template-columns: 10.1% 10.1% 10.1% 10.1% 10.1% 10.1% 10.1% 10.1% 10.1% 10.1%;
+  grid-template-rows: 100%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#openDiv{
+  display: flex;
+  justify-content: flex-end;
+  display: grid;
+  grid-template-columns:10px 10px 10px 10px 10px;
+  margin-right: 250px;
+  
+}
+#moreDiv{
+  z-index: 0;
+  background-image: -webkit-image-set("../img/footer.png");
+  display: flex;
+  flex-direction: row-reverse;
+}
+body{
+  background-image: -webkit-image-set("../img/background.png");
+}
+#winDiv{
+  z-index: 100;
+  display: flex;
+  flex-direction: row;  
+  margin-left: 30px;
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+.buttonFooter{
+  width: 165px;
+  height: 70px;
+  margin-right: 70px;
+ 
+}
+#winOpenDiv{
+  display: grid;
+  grid-template-columns:70% 30%;
+  grid-template-rows: 100%;
+}
+#point{
+  position: fixed;
+  top: 635px;
+  right: 650px;
+}
+#maxScore{
+  position: fixed;
+  top: 635px;
+  right: 925px; 
+}
+#timer{
+  position: fixed;
+  top: 635px;
+  right: 550px;
+}
+#countOfGame{
+  position: fixed;
+  top: 635px;
+  right:1100px ;
+}
+#txtName{
+  position: fixed;
+  top: 635px;
+  right: 1200px;
+}
+#point,#maxScore,#countOfGame{
+  margin-right: 50px;
+  margin-left: 5px;
+  margin-top: 20px;
+  text-align: right;
+  direction: rtl;
+  font-size: xx-large;
+  color: white;
+  border-color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#timer,#txtName{
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: xx-large;
+  color: white;
+  border-color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.manyCards{
+  margin-top: -160px;
+  width: 120px;
+  height: 160px;
+}
